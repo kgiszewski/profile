@@ -92,7 +92,7 @@
         var trip = new Trip([
            { 
                sel : $('#step1'),
-               content : 'My name is Kevin Giszewski and I\'ve been doing web for over a decade!',
+               content : 'Well hello there! My name is Kevin Giszewski and I\'ve been doing web for over a decade!',
                position: 's'
            },
            {
@@ -103,12 +103,13 @@
            {
                sel : $('#step3'),
                content : "I'm the lead dev for a cool plugin called \"Archetype\".  It uses AngularJS and makes life easier for CMS users! <a target='_blank' href='https://github.com/imulus/Archetype'>See it on GitHub!</a>",
-               delay: 4000,
+               delay: 8000,
                position: 's'
            },
            {
                sel : $('#step4'),
                content : "I'm not married to a particular platform.  I like to build with the right tool for the job.",
+               delay: 6000,
                position: 's'
            },
            {
@@ -140,7 +141,7 @@
         ], options); 
         
         $(function(){
-            trip.start();
+            setTimeout(function(){trip.start()}, 6000);
         });
     </script>
     <!--
