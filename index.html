@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Profile of web developer Kevin Giszewski">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>Kevin Giszewski, Web Developer</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/cover.css" rel="stylesheet">
+    <link href="css/bootstrap-tour-standalone.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 id="step1" class="cover-heading">Kevin Giszewski</h1>
+            <p><button class='btn btn-default' id='start'>Click me at your own risk!</button></p>
+            <h2 id="step3" class="lead">Hello! I love to make fun, awesome and useful things on the internet.</h2>
+            <h3 id="step4" class="lead">I enjoy HTML, Javascript and CSS.  I've developed against .NET (C#) and PHP.</h3>
+            <h3 id="step8" class="lead">I love technologies that are object-oriented and use MVC patterns.</h3>
+            <p id="step6" class="dim">I'm pretty darn good at databases too (SQL Server and MySQL).</p>
+            <p id="step9" class="dim">I'm a big fan of GitHub, Bootstrap, LESS and NodeJs technologies.</p>
+            <ul class="list-inline social">
+              <li id="step2">
+                <a target="_blank" href="http://twitter.com/kevingiszewski"><img src="img/twitter.png"/></a>
+              </li>
+                <li id="step5">
+                  <a target="_blank" href="https://www.linkedin.com/pub/kevin-giszewski/35/6/b70"><img src="img/linkedin.png"/></a>
+              </li>
+              <li id="step7">
+                  <a target="_blank" href="http://github.com/kgiszewski"><img src="img/github.png"/></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <ul class='list-unstyled'>
+                <li id="the-end">Thanks for stopping by!</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-tour-standalone.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+      $(function () {
+        var tour = new Tour({
+          template: 
+            "<div class='popover tour'>"+
+              "<div class='arrow'></div>"+
+              "<h3 class='popover-title'></h3>"+
+              "<div class='popover-content'></div>"+
+              "<div class='popover-navigation'>"+
+               "   <button class='btn btn-default' data-role='prev'>« Prev</button>"+
+                "  <span data-role='separator'>|</span>"+
+                " <button class='btn btn-default' data-role='next'>Next »</button>"+
+                "  <span data-role='separator'>|</span>"+
+                " <button class='btn btn-default' data-role='end'>End</button>"+
+              "</div>"+
+              "</nav>"+
+            "</div>",
+          steps: [
+          {
+            element: "#step1",
+            title: "Welcome!",
+            content: "My name is Kevin Giszewski and I've been doing web for over a decade!  Continue the tour to learn more about me.",
+            placement: 'bottom'
+          },
+          {
+            element: "#step2",
+            title: "You should follow me!",
+            content: "I like to tweet about web development.",
+            placement: "bottom"
+          },
+          {
+            element: "#step3",
+            title: "I helped to create something awesome!",
+            content: "I'm the lead dev for a cool plugin called \"Archetype\".  It uses AngularJS and makes life easier for CMS users! <a target='_blank' href='https://github.com/imulus/Archetype'>See it on GitHub!</a>",
+            placement: "bottom"
+          },
+          {
+            element: "#step4",
+            title: "Multi-platformed",
+            content: "I'm not married to a particular platform.  I like to build with the right tool for the job.",
+            placement: "bottom"
+          },
+          {
+            element: "#step5",
+            title: "Experienced",
+            content: "I've worked for both the largest public AND private employers in the world.  I've had years of practical real-world experience.",
+            placement: "bottom"
+          },
+          {
+            element: "#step6",
+            title: "I am Normal(ized)",
+            content: "I'm able to design databases in 3rd normal form and get information back in a highly optimized way.",
+            placement: "bottom"
+          },
+          {
+            element: "#step7",
+            title: "Version Controlled",
+            content: "I really love Git and I have some OSS to show you.",
+            placement: "bottom"
+          },
+          {
+            element: "#step8",
+            title: "True Geek",
+            content: "I eat, sleep and dream code.",
+            placement: "bottom"
+          },
+          {
+            element: "#step8",
+            title: "In the know",
+            content: "I keep up with the latest things in web development.  I'm all about using new tools.",
+            placement: "bottom"
+          },
+          {
+            element: "#the-end",
+            title: "No really!",
+            content: "Thanks for stopping by.  If you'd like to talk to me, email me at: <a target='_blank' href='mailto:kevin@giszewski.com'>kevin@giszewski.com</a>.",
+            placement: "top"
+          }
+        ]});
+
+        // Start the tour
+        $("#start").click(function() {
+          tour.init();
+          tour.restart();
+          tour.start(true);
+        });
+      });
+    </script>
+  </body>
+</html>
