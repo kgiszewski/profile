@@ -199,6 +199,7 @@ h3.popover-title {
 
 .tour button {
     border: none;
+    font-weight: 600;
 }
 
 .tour button:hover {
