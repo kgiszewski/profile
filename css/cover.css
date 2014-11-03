@@ -27,7 +27,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #3A455E;
+  background-color: #666;
 }
 body {
   color: #fff;
@@ -37,6 +37,7 @@ body {
 
 h1{
   font-family: 'Montserrat', sans-serif;
+  color: #131313;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -188,8 +189,9 @@ h3.popover-title {
   background-color: #ddd;
 }
 
-.tour a {
-  color: #428bca;
+.trip-content a {
+  color: #333;
+      font-weight: 600;
 }
 
 .popover-content {

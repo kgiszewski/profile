@@ -16,7 +16,8 @@
 
     <!-- Custom styles for this template -->
     <link href="css/cover.css" rel="stylesheet">
-    <link href="css/bootstrap-tour-standalone.min.css" rel="stylesheet">
+    <!--<link href="css/bootstrap-tour-standalone.min.css" rel="stylesheet">-->
+    <link href="css/trip.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Quicksand|Montserrat' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -41,7 +42,7 @@
 
           <div class="inner cover">
             <h1 id="step1" class="cover-heading">Kevin Giszewski</h1>
-            <p><button class='btn btn-default' id='start'>What does this button do?</button></p>
+            <!--<p><button class='btn btn-default' id='start'>What does this button do?</button></p>-->
             <h2 id="step3" class="lead">Hello! I love to make fun, awesome and useful things on the internet.</h2>
             <h3 id="step4" class="lead">I enjoy HTML, Javascript and CSS.  I've developed against .NET (C#) and PHP.</h3>
             <h3 id="step8" class="lead">I love technologies that are object-oriented and use MVC patterns.</h3>
@@ -79,10 +80,70 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-tour-standalone.min.js"></script>
+    <script src="js/trip.js"></script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+        var options = {
+            delay: 4000,
+            tripTheme: 'yeti'
+        };
+        var trip = new Trip([
+           { 
+               sel : $('#step1'),
+               content : 'My name is Kevin Giszewski and I\'ve been doing web for over a decade!',
+               position: 's'
+           },
+           {
+               sel : $('#step2'),
+               content : 'I like to tweet about web development.',
+               position: 's'
+           },
+           {
+               sel : $('#step3'),
+               content : "I'm the lead dev for a cool plugin called \"Archetype\".  It uses AngularJS and makes life easier for CMS users! <a target='_blank' href='https://github.com/imulus/Archetype'>See it on GitHub!</a>",
+               delay: 4000,
+               position: 's'
+           },
+           {
+               sel : $('#step4'),
+               content : "I'm not married to a particular platform.  I like to build with the right tool for the job.",
+               position: 's'
+           },
+           {
+               sel : $('#step5'),
+               content : "I've worked for both the largest public AND private employers in the world.  I've had years of practical real-world experience.",
+               position: 'n'
+           },
+           {
+               sel : $('#step6'),
+               content : "I'm able to design databases in 3rd normal form and get information back in a highly optimized way.",
+               position: 's'
+           },
+           {
+               sel : $('#step7'),
+               content : "I really love Git and I have some OSS to show you.",
+               position: 's'
+           },
+           {
+               sel : $('#step8'),
+               content : "I keep up with the latest things in web development.  I'm all about using new tools.",
+               position: 's'
+           },
+           {
+               sel : $('#the-end'),
+               content : "Thanks for stopping by.  If you'd like to talk to me, email me at: <a target='_blank' href='mailto:kevin@giszewski.com'>kevin@giszewski.com</a>.",
+               delay: -1,
+               position: 'n'
+           }
+        ], options); 
+        
+        $(function(){
+            trip.start();
+        });
+    </script>
+    <!--
     <script>
       $(function () {
         var tour = new Tour({
@@ -170,7 +231,7 @@
           tour.start(true);
         });
       });
-    </script>
+    </script>-->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
