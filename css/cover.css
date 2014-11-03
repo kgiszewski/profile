@@ -32,6 +32,11 @@ body {
 body {
   color: #fff;
   text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -178,6 +183,8 @@ body {
 }
 
 h3.popover-title {
+  font-family: 'Montserrat';
+  font-weight: 700;
   background-color: #ddd;
 }
 
@@ -187,4 +194,18 @@ h3.popover-title {
 
 .popover-content {
   text-align: center;
+  font-weight: 600;
+}
+
+.tour button {
+    border: none;
+}
+
+.tour button:hover {
+    border: none;
+    background-color: transparent;
+}
+
+#start {
+    font-weight: 600;
 }
