@@ -163,7 +163,7 @@ h1{
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 800px;
+    width: 400px;
   }
 }
 
@@ -173,10 +173,6 @@ h1{
 
 .dim {
   color: #999;
-}
-
-.tour {
-  color: #333;
 }
 
 .popover-navigation {
@@ -191,24 +187,13 @@ h3.popover-title {
 
 .trip-content a {
   color: #333;
-      font-weight: 600;
-}
-
-.popover-content {
-  text-align: center;
   font-weight: 600;
-}
-
-.tour button {
-    border: none;
-    font-weight: 600;
-}
-
-.tour button:hover {
-    border: none;
-    background-color: transparent;
 }
 
 #start {
     font-weight: 600;
+}
+
+.trip-block {
+    max-width: 200px;
 }

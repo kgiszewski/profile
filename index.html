@@ -16,7 +16,6 @@
 
     <!-- Custom styles for this template -->
     <link href="css/cover.css" rel="stylesheet">
-    <!--<link href="css/bootstrap-tour-standalone.min.css" rel="stylesheet">-->
     <link href="css/trip.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Quicksand|Montserrat' rel='stylesheet' type='text/css'>
 
@@ -42,7 +41,6 @@
 
           <div class="inner cover">
             <h1 id="step1" class="cover-heading">Kevin Giszewski</h1>
-            <!--<p><button class='btn btn-default' id='start'>What does this button do?</button></p>-->
             <h2 id="step3" class="lead">Hello! I love to make fun, awesome and useful things on the internet.</h2>
             <h3 id="step4" class="lead">I enjoy HTML, Javascript and CSS.  I've developed against .NET (C#) and PHP.</h3>
             <h3 id="step8" class="lead">I love technologies that are object-oriented and use MVC patterns.</h3>
@@ -89,150 +87,73 @@
             delay: 6000,
             tripTheme: 'yeti'
         };
+        
+        function getPosition(position) {
+            var w = $( window ).width();
+        
+            if(w < 768)
+            {
+                return 's';
+            }
+            
+            return position;
+        }
+        
         var trip = new Trip([
            { 
                sel : $('#step1'),
                content : 'Well hello there! My name is Kevin Giszewski and I\'ve been doing web for over a decade!',
-               position: 's'
+               position: getPosition('n')
            },
            {
                sel : $('#step2'),
                content : 'I like to tweet about web development.',
-               position: 's'
+               position: getPosition('w')
            },
            {
                sel : $('#step3'),
                content : "I'm the lead dev for a cool plugin called \"Archetype\".  It uses AngularJS and makes life easier for CMS users! <a target='_blank' href='https://github.com/imulus/Archetype'>See it on GitHub!</a>",
                delay: 8000,
-               position: 's'
+               position: getPosition('w')
            },
            {
                sel : $('#step4'),
                content : "I'm not married to a particular platform.  I like to build with the right tool for the job.",
                delay: 8000,
-               position: 's'
+               position: getPosition('s')
            },
            {
                sel : $('#step5'),
                content : "I've worked for both the largest public AND private employers in the world.  I've had years of practical real-world experience.",
-               position: 'n'
+               position: getPosition('s')
            },
            {
                sel : $('#step6'),
                content : "I'm able to design databases in 3rd normal form and get information back in a highly optimized way.",
-               position: 's'
+               position: getPosition('s')
            },
            {
                sel : $('#step7'),
                content : "I really love Git and I have some OSS to show you.",
-               position: 's'
+               position: getPosition('e')
            },
            {
                sel : $('#step8'),
                content : "I keep up with the latest things in web development.  I'm all about using new tools.",
-               position: 's'
+               position: getPosition('n')
            },
            {
                sel : $('#the-end'),
                content : "Thanks for stopping by.  If you'd like to talk to me, email me at: <a target='_blank' href='mailto:kevin@giszewski.com'>kevin@giszewski.com</a>.",
                delay: -1,
-               position: 'n'
+               position: getPosition('n')
            }
         ], options); 
         
         $(function(){
-            setTimeout(function(){trip.start()}, 6000);
+            setTimeout(function(){trip.start()}, 1000);
         });
     </script>
-    <!--
-    <script>
-      $(function () {
-        var tour = new Tour({
-          template: 
-            "<div class='popover tour'>"+
-              "<div class='arrow'></div>"+
-              "<h3 class='popover-title'></h3>"+
-              "<div class='popover-content'></div>"+
-              "<div class='popover-navigation'>"+
-               "   <button class='btn btn-default' data-role='prev'>« Prev</button>"+
-                "  <span data-role='separator'>|</span>"+
-                " <button class='btn btn-default' data-role='next'>Next »</button>"+
-                "  <span data-role='separator'>|</span>"+
-                " <button class='btn btn-default' data-role='end'>End</button>"+
-              "</div>"+
-              "</nav>"+
-            "</div>",
-          steps: [
-          {
-            element: "#step1",
-            title: "Welcome!",
-            content: "My name is Kevin Giszewski and I've been doing web for over a decade!  Continue the tour to learn more about me.",
-            placement: 'bottom'
-          },
-          {
-            element: "#step2",
-            title: "You should follow me!",
-            content: "I like to tweet about web development.",
-            placement: "bottom"
-          },
-          {
-            element: "#step3",
-            title: "I helped to create something awesome!",
-            content: "I'm the lead dev for a cool plugin called \"Archetype\".  It uses AngularJS and makes life easier for CMS users! <a target='_blank' href='https://github.com/imulus/Archetype'>See it on GitHub!</a>",
-            placement: "bottom"
-          },
-          {
-            element: "#step4",
-            title: "Multi-platformed",
-            content: "I'm not married to a particular platform.  I like to build with the right tool for the job.",
-            placement: "bottom"
-          },
-          {
-            element: "#step5",
-            title: "Experienced",
-            content: "I've worked for both the largest public AND private employers in the world.  I've had years of practical real-world experience.",
-            placement: "bottom"
-          },
-          {
-            element: "#step6",
-            title: "I am Normal(ized)",
-            content: "I'm able to design databases in 3rd normal form and get information back in a highly optimized way.",
-            placement: "bottom"
-          },
-          {
-            element: "#step7",
-            title: "Version Controlled",
-            content: "I really love Git and I have some OSS to show you.",
-            placement: "bottom"
-          },
-          {
-            element: "#step8",
-            title: "True Geek",
-            content: "I eat, sleep and dream code.",
-            placement: "bottom"
-          },
-          {
-            element: "#step8",
-            title: "In the know",
-            content: "I keep up with the latest things in web development.  I'm all about using new tools.",
-            placement: "bottom"
-          },
-          {
-            element: "#the-end",
-            title: "No really!",
-            content: "Thanks for stopping by.  If you'd like to talk to me, email me at: <a target='_blank' href='mailto:kevin@giszewski.com'>kevin@giszewski.com</a>.",
-            placement: "top"
-          }
-        ]});
-
-        // Start the tour
-        $("#start").click(function() {
-          tour.init();
-          tour.restart();
-          tour.start(true);
-        });
-      });
-    </script>-->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
