@@ -185,6 +185,10 @@ h3.popover-title {
   background-color: #ddd;
 }
 
+.trip-content {
+    font-size: 18px;
+}
+
 .trip-content a {
   color: #333;
   font-weight: 600;
