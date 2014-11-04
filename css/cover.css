@@ -40,6 +40,11 @@ h1{
   color: #131313;
 }
 
+p {
+    font-size: 16px;
+    color: #bbb;
+}
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;
@@ -172,7 +177,7 @@ h1{
 }
 
 .dim {
-  color: #999;
+  color: #bbb;
 }
 
 .popover-navigation {
@@ -185,6 +190,10 @@ h3.popover-title {
   background-color: #ddd;
 }
 
+.trip-block.yeti .trip-content {
+    font-size: 18px !important;
+}
+
 .trip-content a {
   color: #333;
   font-weight: 600;
@@ -195,7 +204,7 @@ h3.popover-title {
 }
 
 .trip-block {
-    max-width: 200px;
+    max-width: 250px;
 }
 
 .title {

@@ -57,13 +57,16 @@
               <li id="step7">
                   <a target="_blank" href="http://github.com/kgiszewski"><img src="img/github.png"/></a>
               </li>
+              <li id="step10">
+                  <a target="_blank" href="http://our.umbraco.org/member/51046"><img src="img/umbraco.png"/></a>
+              </li>
             </ul>
           </div>
 
           <div class="mastfoot">
             <div class="inner">
               <ul class='list-unstyled'>
-                <li id="the-end">Thanks for stopping by!</li>
+                <li id="the-end"><a target='_blank' href='mailto:kevin@giszewski.com'>kevin@giszewski.com</a></li>
               </ul>
             </div>
           </div>
@@ -136,7 +139,7 @@
            {
                sel : $('#step7'),
                content : "I really love Git and I have some OSS to show you.",
-               position: getPosition('e')
+               position: getPosition('s')
            },
            {
                sel : $('#step8'),
@@ -149,10 +152,15 @@
                position: getPosition('w')
            },
            {
+               sel : $('#step10'),
+               content : "You should checkout my profile on Umbraco.  I have contributed many free OSS projects and I have made a few core changes.",
+               position: getPosition('e')
+           },
+           {
                sel : $('#the-end'),
-               content : "Thanks for stopping by.  If you'd like to chat, email me at: <a target='_blank' href='mailto:kevin@giszewski.com'>kevin@giszewski.com</a>.",
+               content : "Thanks for stopping by.  If you'd like to chat, email me!",
                delay: -1,
-               position: getPosition('s')
+               position: getPosition('n')
            }
         ], options); 
         
