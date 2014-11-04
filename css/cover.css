@@ -197,3 +197,9 @@ h3.popover-title {
 .trip-block {
     max-width: 200px;
 }
+
+.title {
+    color: #999;
+    margin: 0;
+    font-size: 20px;
+}
